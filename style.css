@@ -25,8 +25,42 @@ body {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  padding: 4vmin;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.video-container .progress-controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container .progress-controls .progress-bar {
+  width: 95%;
+  height: 0.7vw;
+  max-height: 5px;
+  background: #5B5B5B;
+  display: flex;
+  align-items: center;
+}
+
+.video-container .progress-controls .progress-bar .watched-bar,
+.video-container .progress-controls .progress-bar .playhead {
+  background: #e31221;
+  display: inline-block;
+}
+
+.video-container .progress-controls .progress-bar .watched-bar {
+  height: 100%;
+  width: 20%;
+}
+
+.video-container .progress-controls .progress-bar .playhead {
+  height: 2vw;
+  width: 2vw;
+  max-height: 25px;
+  max-width: 25px;
+  border-radius: 50%;
 }
 
 .video-container .controls {
